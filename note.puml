@@ -1,0 +1,11 @@
+@startuml 注释
+Alice -> Bob : hello
+note left : this is a first note
+
+Bob -> Alice : ok
+note right : this is a right note
+
+Bob -> Alice : how are you?
+
+note over of Alice : 这个Alice
+@enduml
