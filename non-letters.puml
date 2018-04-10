@@ -1,0 +1,7 @@
+@startuml
+Alice -> "Bob()" as Bob:Hello
+Bob -> "This is very\nlong" as Long
+'你可以声明：
+'"Bob()" -> Long as "This is very\nlong"
+Long --> Bob:OK
+@enduml

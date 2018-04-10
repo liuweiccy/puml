@@ -1,0 +1,13 @@
+@startuml
+actor Bob #red
+'Actor和participant的是区别是正在绘制
+participant Alice
+participant "I have a really \nlong name" as L #99ff99
+/'你可以声明:
+一个participant L来重命名"I have a really \nlong name" #99ff99
+'/
+
+Alice -> Bob:认证请求
+Bob -> Alice:认证相应
+Bob --> L:Log记录
+@enduml

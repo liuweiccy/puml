@@ -1,0 +1,5 @@
+@startuml
+actor Bob
+Bob   -> Alice:你好
+Alice --> Bob: 你好
+@enduml

@@ -1,0 +1,10 @@
+@startuml 分割示意图
+Bobby -> Alice : message 1
+Bobby -> Alice : message 2
+newpage
+Bobby -> Alice : message 3
+Bobby -> Alice : message 4
+newpage A title for the \nlast page
+Bobby -> Alice : message 1
+Bobby -> Alice : message 2
+@enduml

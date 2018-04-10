@@ -1,0 +1,4 @@
+@startuml 箭头颜色
+Bob -[#red]> Alice : hello
+Alice -[#99df34]-> Bob : ok
+@enduml

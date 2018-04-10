@@ -1,0 +1,43 @@
+@startuml 消息编号
+autonumber
+Bob -> Alice : auth message req
+Alice -> Bob : auth message rsp
+
+autonumber 15
+Bob -> Alice : auth message req
+Alice -> Bob : auth message rsp
+
+autonumber 40 10
+Bob -> Alice : auth message req
+Alice -> Bob : auth message rsp
+
+autonumber "<b>[000]"
+Bob -> Alice : auth message req
+Alice -> Bob : auth message rsp
+
+autonumber 15 "<b>(<u>00</u>)"
+Bob -> Alice : auth message req
+Alice -> Bob : auth message rsp
+
+autonumber 40 10 "<font color=red><b>Message 0"
+Bob -> Alice : auth message req
+Alice -> Bob : auth message rsp
+
+autonumber 10 10 "<b>[000]"
+Bob -> Alice : auth message req
+Alice -> Bob : auth message rsp
+
+autonumber stop
+Bob -> Alice : dummy
+
+autonumber resume "<b><font color=red> Message 0"
+Bob -> Alice : auth message req
+Alice -> Bob : auth message rsp
+
+autonumber stop
+Bob -> Alice : dummy
+
+autonumber resume 1 "<b><font color=blue> Message 0"
+Bob -> Alice : auth message req
+Alice -> Bob : auth message rsp
+@enduml

@@ -1,0 +1,3 @@
+@startuml
+Alice->Alice:这是我自己\n向自己发送\n信号
+@enduml
