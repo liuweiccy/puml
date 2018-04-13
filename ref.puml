@@ -1,0 +1,14 @@
+@startuml ref引用
+participant Alice
+actor Bob
+
+ref over Alice, Bob:init
+|||
+Alice -> Bob : hello
+|||
+ref over Bob
+    this is can be
+    on several lines
+end ref
+|||
+@enduml

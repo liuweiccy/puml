@@ -7,5 +7,13 @@ note right : this is a right note
 
 Bob -> Alice : how are you?
 
-note over of Alice : 这个Alice
+note over  Alice, Bob #red 
+    这是Alice和Bob
+end note
+
+note right of Bob #34561f
+    这是Bob的右边
+end note
+
+note left of Alice #1188ff : 这是Alice的左边
 @enduml

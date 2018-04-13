@@ -1,0 +1,28 @@
+@startuml 生命线
+User -> A : DoWork
+activate A
+
+A -> B : <<createReq>>
+activate B
+
+
+B -> C : DoWork
+activate C
+C -> C : 内部判断
+activate C #1177aa
+C --> B : Error
+
+
+destroy C
+C --> B : Work Done
+deactivate C
+
+
+B --> A : ReqCreated
+deactivate B
+
+A-> User : Done
+deactivate A
+
+
+@enduml

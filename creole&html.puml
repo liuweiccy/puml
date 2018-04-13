@@ -1,0 +1,34 @@
+@startuml creole和html格式
+participant Alice
+participant "The **Famous** Bob" as Bob
+
+Alice -> Bob : hello --there--
+
+...Some long ~~delay~~...
+
+Bob -> Alice : ok
+note left
+    this is **Bold**
+    this is //italics//
+    this is ""monospaced""
+    this is --stroked--
+    this is __underlined__
+    this is ~~waved~~
+end note
+
+Alice -> Bob : A //well formatted// message
+
+note right of Alice
+    this is <size:18><back:cadetblue>display</back></size> 
+    __left of__ Alice
+end note
+
+note left of Bob
+    <u:red>This</u> is <color:#118888>displayed</color>
+    **<color:purple>left of</color>** <s:red>Alice</s> Bob
+end note
+
+note over Alice, Bob
+    <w:FF33FF>this is hosted</w> by <img:myicon.jpg>
+end note
+@enduml

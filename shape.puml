@@ -1,0 +1,12 @@
+@startuml 注释框形状
+caller -> server : hello
+...**长时间的等待**...
+hnote over caller : idle                      
+
+server -> caller : ok
+
+rnote over server
+"r" as rectangle
+"n" as hexagon
+end note
+@enduml

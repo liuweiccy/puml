@@ -1,0 +1,9 @@
+@startuml 分隔符
+==Initialization==
+Alice -> Bob : 登陆认证请求
+Bob -> Alice : 登录认证响应
+
+==Repetition==
+Alice -> Bob : 另一个登陆认证请求
+Bob -> Alice : 另一个登录认证响应
+@enduml
