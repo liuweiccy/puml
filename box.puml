@@ -1,5 +1,4 @@
 @startuml 包裹
-
 box "重要" #119966
 participant Bob
 participant Alice
