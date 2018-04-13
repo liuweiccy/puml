@@ -1,0 +1,10 @@
+@startuml 创建参与者
+Bob -> Alice : hello
+create Other
+Alice -> Other : new
+create control String
+Alice -> String
+note right: 创建一个字符串
+
+Alice -> Bob : ok
+@enduml

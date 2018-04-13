@@ -1,0 +1,7 @@
+@startuml 标题
+
+title __Simple__ **communication** example \non several lines
+
+Alice -> Bob : 认证请求
+Bob -> Alice : 认证响应
+@enduml

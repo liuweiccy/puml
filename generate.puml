@@ -1,0 +1,9 @@
+@startuml 构造类型和圈点
+
+participant "Fomous Bob" as Bob <<Generated>>
+participant Alice <<(C,#11dd22) Testable>>
+participant Server <<(I,#11ff33)>>
+
+Bob -> Alice : First Message
+Alice -->> Server : Impl
+@enduml

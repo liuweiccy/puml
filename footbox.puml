@@ -1,0 +1,5 @@
+@startuml 移除脚注
+hide footbox
+Alice -> Box : hello
+Box -> Alice : ok
+@enduml

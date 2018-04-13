@@ -1,0 +1,12 @@
+@startuml 包裹
+
+box "重要" #119966
+participant Bob
+participant Alice
+end box
+
+participant Other
+
+Bob -> Alice : hello
+Alice -> Other : heelo
+@enduml

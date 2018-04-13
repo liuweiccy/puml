@@ -1,0 +1,13 @@
+@startuml 发出和接受消息
+autonumber "<b>[0] : "
+[-> A : DoWork
+activate A
+A -> A : internal call
+activate A #dd6618
+A ->] : 请求创建请求
+A <--] : 请求已经创建
+deactivate A
+[<- A : Done
+deactivate A
+|||
+@enduml
